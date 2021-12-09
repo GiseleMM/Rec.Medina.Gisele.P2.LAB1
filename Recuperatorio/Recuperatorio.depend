@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1638832021 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1637964931 c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\linkedlist.h
+
+1639089108 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\menu.c
+	"menu.h"
+
+1639052021 c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\menu.h
+	<stdio.h>
+	<stdlib.h>
+
+1639091529 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	<string.h>
+	<time.h>
+	"menu.h"
+	"LogEntry.h"
+	"controller.h"
+	"parser.h"
+
+1639091116 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\logentry.c
+	"LogEntry.h"
+
+1639091116 c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\logentry.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	<string.h>
+	<time.h>
+	"menu.h"
+
+1639091299 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\controller.c
+	"controller.h"
+
+1639091478 c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\controller.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	<string.h>
+	<time.h>
+	"menu.h"
+	"parser.h"
+	"LogEntry.h"
+
+1639091478 c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\parser.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	<string.h>
+	<time.h>
+	"menu.h"
+	"LogEntry.h"
+	"controller.h"
+
+1639091477 source:c:\users\1\downloads\utn\laboratorio-programacion\gmm\recuperatorio\parser.c
+	"parser.h"
+
