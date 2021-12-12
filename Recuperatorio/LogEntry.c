@@ -7,7 +7,7 @@ void mostrar(LogEntry* pElement)
 {
     if(pElement!=NULL)
     {
-        printf("%-s - %-20s - %-20s - %-6d %-20s\n",pElement->date,
+        printf("%-10s - %-5s - %-25s - %-5d - %-10s\n",pElement->date,
                pElement->time,
                pElement->serviceName,
                pElement->gravedad,
@@ -24,7 +24,7 @@ int mostrarLista(LinkedList* lista)
     if(lista!=NULL)
     {
         tam=ll_len(lista);
-        printf("Listado\n");
+        printf("Fecha |Hora|Nombre del servicioque fallo|Gravedad del error|Msg de error\n\n");
         for(int i=0; i<tam; i++)
         {
             aux=(LogEntry*)ll_get(lista,i);
@@ -197,7 +197,7 @@ void log_destroy(LogEntry* pElement)
     }
 }
 
-//llFILTER-------------------------
+//ll-FILTER-------------------------
 int filtrarPorGravedad3(void* pElement)
 {
     int es3=0;
@@ -220,12 +220,22 @@ int filtrarPorGravedad4_7(void* pElement)
 }
 int filtrarPorGravedad7(void* pElement)
 {
-    int es3=0;
+    int es7=0;
     if(pElement!=NULL)
     {
         if( ((LogEntry*)pElement)->gravedad > 7)
-        es3=1;
+        es7=1;
     }
-    return es3;
+    return es7;
+}
+int filtrarPorGravedadMenorA3(void* pElement)
+{
+    int esMenorA3=0;
+    if(pElement!=NULL)
+    {
+        if( ((LogEntry*)pElement)->gravedad < 3)
+        esMenorA3=1;
+    }
+    return esMenorA3;
 }
 

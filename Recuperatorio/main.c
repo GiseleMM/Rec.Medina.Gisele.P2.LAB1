@@ -4,9 +4,7 @@
 #include <string.h>
 #include <time.h>
 #include "menu.h"
-
 #include "LogEntry.h"
-
 #include "controller.h"
 #include "parser.h"
 
@@ -37,16 +35,16 @@ int main()
             if(ll_isEmpty(lista))
             {
                 fflush(stdin);
-                printf("ingrese path ");
+                printf("Ingrese path(log.txt): ");
                 gets(path);
                 if(controller_loadFromText(path,lista))
                 {
-                    printf("archivo cargado con exito\n");
+                    printf("Archivo %s cargado con exito\n",path);
                 }
             }
             else
             {
-                printf("ya hay lista en el sistema\n");
+                printf("Lista ya cargada en el sistema\n");
             }
             break;
 
@@ -57,10 +55,18 @@ int main()
             }
             else
             {
-                printf("no hay elementos en la lista\n");
+                printf("No hay elementos en la lista\n");
             }
             break;
         case 3:
+            if(!ll_isEmpty(lista))/*no esta vacia*/
+            {
+                controller_estadistica(lista);
+            }
+            else
+            {
+                printf("No hay elementos en la lista\n");
+            }
             break;
         case 4:
             if(!ll_isEmpty(lista))/*no esta vacia*/
@@ -69,14 +75,14 @@ int main()
             }
             else
             {
-                printf("no hay elementos en la lista\n");
+                printf("No hay elementos en la lista\n");
             }
             break;
         case 5:
             seguir=10;
             break;
         default:
-            printf("opcion invalida\n");
+            printf("Opcion invalida\n");
             break;
 
 

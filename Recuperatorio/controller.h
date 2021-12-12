@@ -16,3 +16,4 @@ int controller_loadFromText(char* path, LinkedList* lista);
 int controller_listar(LinkedList* lista);
 int controller_saveAsText(char* path, LinkedList* lista);
 int controller_procesar(LinkedList* lista);
+int controller_estadistica(LinkedList* lista);

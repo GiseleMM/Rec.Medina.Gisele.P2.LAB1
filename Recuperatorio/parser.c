@@ -12,7 +12,7 @@ int parser_logFromText(FILE* pFile,LinkedList* lista)
     int contador=0;
     if(pFile!=NULL && lista!=NULL)
     {
-        fscanf(pFile,"%[^;];%[^;];%[^;];%[^;];%[^\n]\n",
+        /*fscanf(pFile,"%[^;];%[^;];%[^;];%[^;];%[^\n]\n",
                buffer[0],
                buffer[1],
                buffer[2],
@@ -21,6 +21,9 @@ int parser_logFromText(FILE* pFile,LinkedList* lista)
               );
         printf("%s -%s -%s -%s  -%s\n",buffer[0],buffer[1],
                buffer[2],buffer[3],buffer[4]);
+
+               no realizar lectura fantasma por que NO hay encabezado
+               */
         do
         {
 
@@ -50,6 +53,6 @@ int parser_logFromText(FILE* pFile,LinkedList* lista)
         while(!feof(pFile));
         todoOk=1;
     }
-    printf("\nse cargaron %d elementos a la lista\n", contador);
+    printf("\nSe cargaron %d elementos a la lista\n", contador);
     return todoOk;
 }

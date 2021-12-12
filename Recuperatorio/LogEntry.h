@@ -45,3 +45,4 @@ void log_destroy(LogEntry* pElement);
 int filtrarPorGravedad3(void* pElement);
 int filtrarPorGravedad4_7(void* pElement);
 int filtrarPorGravedad7(void* pElement);
+int filtrarPorGravedadMenorA3(void* pElement);
